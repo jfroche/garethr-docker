@@ -8,6 +8,8 @@
 
 <% if @storage_driver %>STORAGE_DRIVER=<%= @storage_driver %>
 <% end -%>
+<% if @storage_extra %>EXTRA_DOCKER_STORAGE_OPTIONS="<%= @storage_extra %>"
+<% end -%>
 <% if @storage_devs %>DEVS="<%= @storage_devs %>"
 <% end -%>
 <% if @storage_vg %>VG=<%= @storage_vg %>

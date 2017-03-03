@@ -98,6 +98,7 @@ class docker::service (
   $storage_config                    = $docker::storage_config,
   $storage_config_template           = $docker::storage_config_template,
   $storage_setup_file                = $docker::storage_setup_file,
+  $storage_extra                     = $docker::storage_extra,
   $service_provider                  = $docker::service_provider,
   $service_config                    = $docker::service_config,
   $service_config_template           = $docker::service_config_template,

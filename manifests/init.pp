@@ -344,6 +344,10 @@
 # [*storage_pool_autoextend_percent*]
 #   Extend the pool by specified percentage when threshold is hit.
 #
+# [*storage_extra*]
+#   Extra options to provide to storage-setup script.
+#   Note: this option is usefull when storage_setup_file is false
+#
 class docker(
   $version                           = $docker::params::version,
   $ensure                            = $docker::params::ensure,
@@ -432,6 +436,7 @@ class docker(
   $storage_config                    = $docker::params::storage_config,
   $storage_config_template           = $docker::params::storage_config_template,
   $storage_setup_file                = $docker::params::storage_setup_file,
+  $storage_extra                     = $docker::params::storage_extra,
   $service_provider                  = $docker::params::service_provider,
   $service_config                    = $docker::params::service_config,
   $service_config_template           = $docker::params::service_config_template,
